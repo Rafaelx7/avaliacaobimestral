@@ -2,7 +2,7 @@
     position: fixed;
     right: 5px;
     bottom: 0;
-    width: 100%;
+    width: 38%;
     text-align: right;
 }
 
@@ -23,5 +23,40 @@
     font-size: 20px;
     margin: 4px 2px;
     cursor: pointer;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-transition: width 2s;
+    transition: width 2s;
+}
+
+button:hover {
+    color: dimgray;
+    width: 300px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: auto auto
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+        grid-template-columns: auto
+    }
 }

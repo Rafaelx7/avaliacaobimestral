@@ -19,10 +19,57 @@
 </head>
 
 <body>
+    <div style="text-align: right;">
+        <small>Lista de Livros > Cadastro de Livros</small>
+    </div>
+
     <h3 style="text-align: center">Cadastro de Livros</h3>
 
+    <form action="index.html" method="POST">
+        <table>
+            <tr>
+                <td><label>Título*</label></td>
+                <td><input type="text" id="titulo" name="titulo" placeholder="Cinco Minutos" required></td>
+            </tr>
+            <tr>
+                <td><label>Autor*</label></td>
+                <td>
+                    <input type="text" id="autorNome" name="autorNome" placeholder="José" required>
+                    <input type="text" id="autorSobrenome" name="autorSobrenome" placeholder="de Alencar" required>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Origem</label></td>
+                <td>
+                    <input type="radio" id="origem" name="origem"><label>Nacional</label>
+                    <input type="radio" id="origem" name="origem"><label>Internacional</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Gênero*</label></td>
+                <td>
+                    <select id="genero" name="genero">
+                        <option value="romance">Romance</option>
+                        <option value="drama">Drama</option>
+                        <option value="comedia">Comédia</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Publicação*</label></td>
+                <td><input type="date" id="publicacao" name="publicacao" required></td>
+            </tr>
+        </table>
 
+        <br />
+        <br />
+        <br />
 
+        <div style="text-align: center">
+            <button class="button" type="submit">Salvar</button>
+            <button class="button" type="reset">Limpar</button>
+        </div>
+    </form>
 
     <div class="footer">
         <object height="170px" width="100%" data="footer.html"></object>
