@@ -1,0 +1,62 @@
+.footer {
+    position: fixed;
+    right: 5px;
+    bottom: 0;
+    width: 38%;
+    text-align: right;
+}
+
+.rcorners {
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-transition: width 2s;
+    transition: width 2s;
+}
+
+button:hover {
+    color: dimgray;
+    width: 300px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: auto auto
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+        grid-template-columns: auto
+    }
+}
